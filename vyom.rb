@@ -1,8 +1,8 @@
 class Vyom < Formula
   desc "Terminal music player for MPD with DSP EQ, synced lyrics, and Cava visualizer"
   homepage "https://github.com/MrSyr3x/Vyom"
-  url "https://github.com/MrSyr3x/Vyom/archive/refs/tags/v1.0.242.tar.gz"
-  sha256 "0047e80c8f53ba9e0f4267c9fe4647a73c11df370dfc695ec351f44bc095254d"
+  url "https://github.com/MrSyr3x/termony/archive/refs/tags/v1.0.243.tar.gz"
+  sha256 "9a0ac2acb2a874f0e52d1aedc077394c38960f238420bc3dc3bc84fd814237c2"
   license "MIT"
 
   depends_on "rust" => :build
