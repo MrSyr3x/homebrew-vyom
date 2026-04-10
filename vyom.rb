@@ -1,8 +1,8 @@
 class Vyom < Formula
   desc "Terminal music player for MPD with DSP EQ, synced lyrics, and Cava visualizer"
   homepage "https://github.com/MrSyr3x/Vyom"
-  url "https://github.com/MrSyr3x/Vyom/archive/refs/tags/v1.0.222.tar.gz"
-  sha256 "94e3ae7d46249a58a2a913fc2f2bb78f809a417ef2321870a4acb7ed004884a0"
+  url "https://github.com/MrSyr3x/Vyom/archive/refs/tags/v1.0.2485.tar.gz"
+  sha256 "8a65b8529ece00739b622f7b09426281ccf8b4378f42483354b6f478295fab25"
   license "MIT"
 
   depends_on "rust" => :build
@@ -13,7 +13,9 @@ class Vyom < Formula
   depends_on "switchaudio-osx" => :recommended  # Optional: device switching (macOS)
 
   def install
-    system "cargo", "install", *std_cargo_args
+    cd "tmux-music" do
+      system "cargo", "install", *std_cargo_args
+    end
   end
 
   test do
